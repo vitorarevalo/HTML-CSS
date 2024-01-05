@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #ffffff;
+    --cor02: #c9c9c9;
+    --cor03: #444444;
+    --cor04: #1b1b1b;
+    --cor05: #000000;
+
+    --fonte01: 'Arial, Helvetica, sans-serif';
+    --fonte02: 'Times, serif';
+}
+
+p{
+    color: var(--cor04);
+    font-family: var(--fonte02);
+}
