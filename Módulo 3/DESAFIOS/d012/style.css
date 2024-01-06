@@ -2,50 +2,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-*{
-    padding: 0px;
-    margin: 0px;
-}
-
-
 :root{
-    --fonte1: 'Verdana';
-    --fonte2: 'Passion One';
-    --fonte3: 'Sriracha';
+    --fonte01: 'Passion One';
+    --fonte02: 'Verdana';
+    --fonte03: 'Sriracha';
 }
 
-body{
-    min-width: 100vh;
-    font-family: var(--fonte1);
+*{
+    margin: 0px;
+    padding: 0px;
 }
+
+
+/* Cabeçalho */
+
 
 header{
     background-color: black;
     text-align: center;
     color: white;
-
 }
 
 
 header h1{
-    font-family: var(--fonte2);
-    margin: 0px;
-    font-size: 10vw;
     padding-top: 50px;
+    font-family: var(--fonte01);
+    font-size: 10vw;
     font-variant: small-caps;
 }
 
 
 header p{
-    font-family: var(--fonte1);
+    font-family: var(--fonte02);
     padding-bottom: 50px;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
 
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 a:hover{
@@ -53,65 +49,60 @@ a:hover{
 }
 
 
+
+
 /* Conteúdo */
 
-
 section{
+    font-family: var(--fonte03);
+    font-size: 3.5vw;
+    padding-left: 30px;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
-    padding-left: 30px;
-    font-family: var(--fonte3);
-    font-size: 3.5vw;
-
 }
-
 
 section p{
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 
 
-.normal{
-    color: black;
-}
 
-.imagem{
+
+.imagem p{
+    background-color: rgba(0, 0, 0, 0.527);
     color: white;
-    background-color: rgba(51, 51, 51);
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.575);
-    background-attachment: fixed;
-}
-
-
-.imagem > p{
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.514);
     text-shadow: 1px 1px 0px black;
 }
 
+.imagem{
+    background-color: rgb(141, 141, 141);
+    background-position: right center;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.575);
+    background-size: cover;
+}
 
 #img01{
     background-image: url(imagens/background001.jpg);
-    background-position: right center;
-    background-size: cover;
+    
 }
 
 
 #img02{
     background-image: url(imagens/background002.jpg);
-    background-size: cover;
+
 }
 
-
-
+/* Rodapé */
 
 footer{
     background-color: black;
     text-align: center;
     color: white;
-    font-family: var(--fonte1);
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family: var(--fonte02);
 }
