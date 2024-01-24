@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints 
+Pequenas Telas: até 480px
+Celular: 481px — 768px
+Tablet: 769px — 1024px
+Deskyop: 1025px — 1200px
+TV: acima de 1200px
+*/
+
+@media print{ /* IMPRESSORAS */
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg); /* Desnecessário */
+    }
+    
+    main{
+        width: 90vw;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    main::after{
+        content: 'Site Impresso com Direitos Autorais para Vitin Alex';
+    }
+
+
+    main h1{
+        text-shadow: none;
+        color: black;        
+    }
+    
+    #phone{display: none; }
+    #tablet{display: none; }
+    #print{display: block; }
+    #pc{display: none; }
+    #tv{display: none; }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) { /* TABLETS */
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #phone{display: none; }
+    #tablet{display: block; }
+    #print{display: none; }
+    #pc{display: none; }
+    #tv{display: none; }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) { /* DESKTOP */
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #phone{display: none; }
+    #tablet{display: none; }
+    #print{display: none; }
+    #pc{display: block; }
+    #tv{display: none; }
+}
+
+
+@media screen and (min-width: 1200px) { /* TELAS GRANDES */
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 700px;
+    }
+
+    #phone{display: none; }
+    #tablet{display: none; }
+    #print{display: none; }
+    #pc{display: none; }
+    #tv{display: block; }
+}
+
+
+
+
+
+
+/*
+Ignorar pois o site já está sendo feito para mobile
+
+@media screen and (max-width: 480px){
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    
+} */
