@@ -10,25 +10,78 @@
 
 body{
     background-color: rgb(50, 0, 97);
-    color: white;
 }
 
 nav{
+    color: white;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     
-
-    border: 1px solid white;
-    padding: 10px;
+    min-height: 10vh;
+    background-color: rgb(33, 0, 71);
+    padding: 20px;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.473);
 }
+
 
 
 #vitin{
+    font-size: 1.8em;
+    font-weight: 100;
     
 }
 
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: rgba(202, 202, 202, 0.712);
+    transition: 0.4s;
+}
+
 .it{
-    flex-basis: 130px;
-    border: 1px solid red;
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.it:hover{
+    background-color: rgba(247, 0, 255, 0.521);
+    transition: 0.4s;
+}
+
+#tudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 40px;
+    margin-right: 5vw;
+}
+
+main{
+    display: block;
+    background-color: white;
+    width: 50vw;
+    margin: auto;
+    border-radius: 10px;
+}
+
+main h1{
+    text-align: center;
+    padding: 10px;
+}
+
+main h2{
+    text-align: center;
+}
+
+main p{
+    text-align: justify;
+    padding: 8px 15px;
+    text-indent: 30px;
 }
